@@ -1,0 +1,3 @@
+interface DibujaCatalogo{
+    dibuja():void;
+}
