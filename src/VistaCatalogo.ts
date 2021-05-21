@@ -5,13 +5,15 @@ export class VistaCatalogo{
     protected object: DibujaCatalogo;
 
     constructor(new_Arr_obj = new Array<VistaVehiculo>()){
-        new_Arr_obj.push(new VistaVehiculo("vehiculo económico"));
-        new_Arr_obj.push(new VistaVehiculo("vehiculo amplio"));
-        new_Arr_obj.push(new VistaVehiculo("vehiculo rápido"));
-        new_Arr_obj.push(new VistaVehiculo("vehiculo confortable"));
-        new_Arr_obj.push(new VistaVehiculo("vehiculo deportivo"));
-        new_Arr_obj.push(new VistaVehiculo("vehiculo pequeño"));
-        this.object = new_Arr_obj;
+        this.arr_objects.push(new VistaVehiculo("vehiculo económico"));
+        this.arr_objects.push(new VistaVehiculo("vehiculo amplio"));
+        this.arr_objects.push(new VistaVehiculo("vehiculo rápido"));
+        this.arr_objects.push(new VistaVehiculo("vehiculo confortable"));
+        this.arr_objects.push(new VistaVehiculo("vehiculo deportivo"));
+        this.arr_objects.push(new VistaVehiculo("vehiculo pequeño"));
+    
+        //this.object = new_Arr_obj;
+
     }
 
     dibuja(){

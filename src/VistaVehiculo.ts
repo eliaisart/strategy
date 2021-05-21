@@ -1,12 +1,12 @@
 export class VistaVehiculo{
     
-    protected descr: string;
+    protected descripcion: string;
 
     constructor(desc: string){
-        this.descr = desc;
+        this.descripcion = desc;
     }
 
     dibuja(){
-        console.log(this.descr);
+        console.log(this.descripcion);
     }
 }
