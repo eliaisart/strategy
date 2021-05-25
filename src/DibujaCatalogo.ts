@@ -1,4 +1,5 @@
+import { VistaVehiculo } from "./VistaVehiculo.js";
 
-interface DibujaCatalogo{
-    dibuja():void;
+export interface DibujaCatalogo{
+    dibuja(contenido: Array<VistaVehiculo>):void;
 }
