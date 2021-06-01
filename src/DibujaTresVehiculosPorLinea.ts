@@ -3,8 +3,9 @@ import { DibujaCatalogo } from "./DibujaCatalogo.js";
 
 export class DibujaTresVehiculosPorLinea implements DibujaCatalogo{
     dibuja(contenido: Array<VistaVehiculo>){
-        //imprime lista vehiculos seguidos y cada 3 una separacion 
         console.log("Dibuja los vehiculos mostrando una separacion cada tres vehiculos");
+        console.log("----------------------");
+
         let j = 0;
         for (let i=0; i < contenido.length; i++){
             contenido[i].dibuja();
@@ -13,22 +14,9 @@ export class DibujaTresVehiculosPorLinea implements DibujaCatalogo{
                 console.log("----------------------");
                 j=0;
             }
-            /*
-
-            if(i==2){
-                console.log("----------------------");
-                i=2;
-            }
-
-            */
-         
-            /*
-            for(let j=0; j <= 2; j++){
-                //console.log(contenido[j].dibuja() + "\n");
-                console.log("----------------------");
-            }
-            */
         }
-        console.log("---------------FINAL DEL CATALOGO---------------");
+        console.log("----------------------");
+        console.log("FINAL DEL CATALOGO");
+        console.log("");
     }
 }
