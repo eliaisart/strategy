@@ -4,7 +4,7 @@ export class DibujaTresVehiculosPorLinea {
         console.log("Dibuja los vehiculos mostrando una separacion cada tres vehiculos");
         let j = 0;
         for (let i = 0; i < contenido.length; i++) {
-            console.log(contenido[i].dibuja() + "\n");
+            contenido[i].dibuja();
             j++;
             if (j == 3) {
                 console.log("----------------------");
